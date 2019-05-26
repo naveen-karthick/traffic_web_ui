@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Taffic Light</title> 
+        <link rel="stylesheet" type="text/css" href="../css/styles.css">
+        <script  src="../js/script.js" ></script>   
+    </head>
+<body> 
+    <button id="process-live-traffic" class="red-button"> Press here to process live traffic density</button>
+    <div id="traffic-signals">
+            <img class="image" id="lane-1-image">
+            <img class="image" id="lane-2-image">
+            <img class="image" id="lane-3-image">
+            <img class="image" id="lane-4-image">
+            <img src="/Users/naveenkarthick/Documents/hackathon_2019/traffic-lights-UI-1/css/pedestrian.png" class="ped-image display-none" id="lane-1-ped">
+            <img src="/Users/naveenkarthick/Documents/hackathon_2019/traffic-lights-UI-1/css/pedestrian.png" class="ped-image display-none" id="lane-2-ped">
+            <img src="/Users/naveenkarthick/Documents/hackathon_2019/traffic-lights-UI-1/css/pedestrian.png" class="ped-image display-none" id="lane-3-ped">
+            <img src="/Users/naveenkarthick/Documents/hackathon_2019/traffic-lights-UI-1/css/pedestrian.png" class="ped-image display-none" id="lane-4-ped">
+        <div id="lane-1" class="signal">
+            <div class="lamp" id="lane1-Red"></div>
+            <div class="lamp" id="lane1-Yellow"></div>
+            <div class="lamp lamp-left lampGreen" id="lane1-Green-left"></div>
+            <div class="lamp lamp-straight" id="lane1-Green"></div>
+            <div class="lamp lamp-right" >
+                    <div id="lane1-Green-Right" class="show-right"></div>
+            </div>
+        </div>
+        <div id="lane-2" class="signal">
+            <div class="lamp" id="lane2-Red"></div>
+            <div class="lamp" id="lane2-Yellow"></div>
+            <div class="lamp lamp-left lampGreen" id="lane2-Green-left"></div>
+            <div class="lamp lamp-straight" id="lane2-Green"></div>
+            <div class="lamp lamp-right" >
+                    <div id="lane2-Green-Right" class="show-down" ></div>
+            </div>
+        </div>  
+        <div id="lane-3" class="signal">
+                <div class="lamp lamp-right" >
+                        <div id="lane3-Green-Right" class="show-left"></div>
+                </div>
+            <div class="lamp lamp-straight" id="lane3-Green"></div>
+            <div class="lamp lamp-left lampGreen" id="lane3-Green-left"></div>
+            <div class="lamp clear" id="lane3-Yellow"></div>
+            <div class="lamp" id="lane3-Red"></div>
+        </div>
+        <div id="lane-4" class="signal">
+                <div class="lamp lamp-left" >
+                        <div id="lane4-Green-Right" class="show-up" ></div>
+                </div>
+            <div class="lamp lamp-left" id="lane4-Green"></div>
+            <div class="lamp lamp-left lampGreen" id="lane4-Green-left"></div>
+            <div class="lamp clear" id="lane4-Yellow"></div>
+            <div class="lamp" id="lane4-Red"></div>
+        </div>    
+    </div>
+</body>
+</html>
+<script  src="../js/script.js" ></script>   
